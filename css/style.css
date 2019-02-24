@@ -1,0 +1,87 @@
+		body{
+			background-color: rgb(230,230,230,0.4);
+		}
+		ul.activities{
+			padding-left: 20px;
+			margin-top: 20px;
+		}
+		ul.activities li{
+			list-style: none;
+
+		}
+		ul.activities li{
+			margin-bottom: 20px;
+		}
+		ul.activities li a{
+			font-size: 12px;
+		}
+		#foot a{
+			color: rgb(200,200,200);
+		}
+		#container {
+		    background-image: url('./images/tank.png');
+		    background-position: right;
+		    background-repeat: no-repeat;
+		    background-size:  ;
+		    margin-left:20px;
+		    margin-right:auto;
+		    width: 273px;
+		    height: 450px;
+		    border-left: 1px solid #bbb;
+		    border-right: 1px solid #bbb;
+		    border-bottom: 1px solid #bbb;
+		    border-top: 1px solid #ccc;
+		    -webkit-border-radius: 10px;
+		    -moz-border-radius: 10px;
+		    border-radius: 10px;
+		    padding-left: 5px;
+		    padding-right: 5px;
+		    padding-bottom: 30px;
+		    padding-top: 5px;
+		    overflow: hidden;
+
+		}
+		#glass {
+		    background: rgba( 255, 255, 255, 0.50);
+		    border: 1px solid #bbb;
+		    border-top: 1px solid #eee;  
+		    -webkit-border-radius: 10px;
+		    -moz-border-radius: 10px;
+		    border-radius: 10px;
+		    width: 260px;
+		    height: 400px;
+		    position: relative;
+		    overflow: hidden;
+
+		}
+		#water {
+		    background-image: url("../images/waves.png");   
+		    background-position: top right;
+		    position: absolute;
+		    bottom: 0px;
+		    width: 300px;
+		    height: 100px;
+		    -webkit-transition: all 3s ease-out;
+		    -moz-transition: all 3s ease-out;
+		    transition: all 3s ease-out;
+		    -webkit-border-radius: 10px;
+		    -moz-border-radius: 10px;
+		    border-radius: 10px;
+		    animation-name: swing;
+		    animation-duration: 1.5s;
+		    animation-delay: 0s;
+		    animation-timing-function: linear;
+		    animation-iteration-count: infinite;
+		}
+		.#glass:hover #water {
+		    height: 420px;
+		    background-position: top left;
+		    -webkit-transition: all 3s ease-out;
+		    -moz-transition: all 3s ease-out;
+		    transition: all 3s ease-out;
+		}
+
+		@keyframes swing{
+			100%{background-position: top right;}
+			//100%{background-position: top top;}
+		}
